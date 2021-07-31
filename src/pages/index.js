@@ -2,8 +2,8 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Layout from "../components/layout/content"
+import Seo from "../components/layout/seo"
 
 const IndexPage = () => (
   <Layout>
@@ -13,10 +13,10 @@ const IndexPage = () => (
     <p>Now go build something great.</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
+      alt="A Gatsby astronaut"
       width={300}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
-      alt="A Gatsby astronaut"
       style={{ marginBottom: `1.45rem` }}
     />
     <p>
